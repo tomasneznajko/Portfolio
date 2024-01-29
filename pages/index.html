@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tomas Neznajko</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/index.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="index.html" class="navbar__logo">  
+                        <!-- <img src="/images/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko Shop">  -->
+                        Tomas Neznajko
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item with-submenu">
+                        <a href="/shop" class="navbar__link with-icon">
+                            Perfil <iconify-icon icon="tabler:chevron-down" style="color: white;"></iconify-icon>
+                        </a>
+                        
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="/shop?filter=funkos" class="submenu__link">
+                                    Descripción
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="/shop?filter=remeras" class="submenu__link">
+                                    Habilidades duras
+                                </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="/shop?filter=llaveros" class="submenu__link">
+                                    Habilidades blandas
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/contact" class="navbar__link">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/shop/cart" class="navbar__link">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <article class="hero__content container">
+                <div>
+                    <h3 class="hero__title">
+                        Desarrollador                         
+                    </h3>
+                    <h3 class="hero__title">
+                        de software
+                    </h3>
+                </div>
+
+                
+                <!-- <p class="hero__description">
+                    Descubrí el próximo Funko Pop de tu colección
+                </p> -->
+                <a href="/shop" class="hero__link">
+                    Descargar CV
+                </a>
+            </article>
+        </section>
+        <main class="container main">
+
+            <section class="perfil">
+                <h2 class="perfil__title">Perfil</h2>
+                <ul class="section__subtitles">
+                    <li class="perfil__item">
+                        <h3 class="perfil__subtitle subtitle__text">
+                            Descripción
+                        </h3>
+                        <div class="content myBorder">
+                            <p class="content__text">
+                                Soy un estudiante en ingeniería en sistemas de información con el sueño de ejercer un cargo de liderazgo en el ámbito de desarrollo de sistemas de continuo crecimiento y perfección junto a compañeros de equipo con los cuales pueda acompañar y apoyar para lograr soluciones de gran calidad.
+
+                            </p>
+                            <!-- <picture class="myBorder">
+                                <img src="/images/Foto_de_perfil.jpg" alt="Foto de perfil">
+                            </picture> -->
+                        </div>
+                    </li>
+                    <li class="perfil__item">
+                        <h3 class="perfil__subtitle subtitle__text">
+                            Habilidades duras
+                        </h3>
+                        <div class="content__parts">
+                            <div class="content__part myBorder">
+                                <h4 class="part__title">Actualidad</h4>
+                                <div class="part__body">
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Lenguajes de programación</h5>
+
+                                        <ul class="part__content">
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#java">
+                                                    Java
+                                                </button>
+                                                <div class="modal fade" id="java" tabindex="-1" aria-labelledby="javaLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="javaLabel">Desarrollos en Java</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de aplicación web con <a href="https://javalin.io/documentation" target="_blank" class="content__link">Javalin</a>, empleando patrón arquitectónico MVC</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de API Rest con <a href="https://javalin.io/documentation" target="_blank" class="content__link">Javalin</a> y documentada con <a href="https://swagger.io/docs/" class="content__link"></a>Swagger</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Consumo de API Rest con <a href="https://square.github.io/retrofit/" target="_blank" class="content__link">Retrofit</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Transformación de datos para su almacenamiento en medio persistente con <a href="https://hibernate.org/" target="_blank" class="content__link">Hibernate</a> (ORM de tipo Data Mapper)</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de cronTask (tareas ejecutadas en periodos determinados) con <a href="https://www.geeksforgeeks.org/runnable-interface-in-java/" target="_blank" class="content__link">Runnable</a> y <a href="https://www.baeldung.com/java-timer-and-timertask" class="content__link">Timer</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Prácticas de testeo con <a href="https://junit.org/junit5/" class="content__link">JUnit</a> y mockeo de objetos con <a href="https://site.mockito.org/" target="_blank" class="content__link">Mockito</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Gestión de dependencias con <a href="https://mvnrepository.com/" target="_blank" class="content__link">Maven</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/java.png" alt="Logo de Java">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/hibernate.png" alt="Logo de Hibernate">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/javalin.png" alt="Logo de Javalin">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/swagger.png" alt="Logo de Swagger">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/maven.png" alt="Logo de Maven">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/junit.png" alt="Logo de JUnit">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/mockito.png" alt="Logo de Mockito">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#c">
+                                                    C
+                                                </button>
+                                                <div class="modal fade" id="c" tabindex="-1" aria-labelledby="cLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="cLabel">Desarrollos en C</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de funcionalidades de sistemas operativos</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo de punteros y memoria dinámica</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo del árbol de Huffman</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Serialización de tipos de datos abstráctos</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Resolución de problemáticas con los diferentes tipos de listas y estructuras de datos adecuados a su contexto</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/c.png" alt="Logo de C">
+                                                                </picture>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#js">
+                                                    JavaScript
+                                                </button>
+                                                <div class="modal fade" id="js" tabindex="-1" aria-labelledby="jsLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="jsLabel">Desarrollos en JavaScript</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div>
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de aplicación web con <a href="https://expressjs.com/" target="_blank" class="content__link">Express</a> en el entorno <a href="https://nodejs.org/docs/latest/api/" target="_blank" class="content__link">NodeJS</a>, empleando el patrón arquitectónico MVC</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo AJAX para aplicaciones web</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo vinculados al DOM y uso de librería <a href="https://api.jquery.com/" target="_blank" class="content__link">JQuery</a> para brindar dinamismo a los documentos HTML</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollos con <a href="https://es.vuejs.org/v2/guide/" target="_blank" class="content__link">Vue.js</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/js.png" alt="Logo de JavaScript">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/node.png" alt="Logo de NodeJS">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/jquery.png" alt="Logo de JQuery">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/vuejs.png" alt="Logo de VueJS">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#python">
+                                                    Python
+                                                </button>
+                                                <div class="modal fade" id="python" tabindex="-1" aria-labelledby="pythonLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="pythonLabel">Desarrollos en Python</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div>
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de aplicación web con <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank" class="content__link">Flask</a>, empleando el patrón arquitectónico MVC</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de web scraping con <a href="https://www.selenium.dev/selenium/docs/api/py/api.html#" target="_blank" class="content__link">selenium</a> </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/python.png" alt="Logo de Python">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/flask.png" alt="Logo de Flask">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#scala">
+                                                    Scala
+                                                </button>
+                                                
+                                                <div class="modal fade" id="scala" tabindex="-1" aria-labelledby="scalaLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="scalaLabel">Desarrollos en Scala</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+    
+                                                            <div>
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de dominios con paradigma híbrido objeto-funcional</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo de tipos (Bound types, varianza de tipos, tipos genéricos)</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Uso de mónadas y mixines</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/scala.png" alt="Logo de Scala">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#ruby">
+                                                    Ruby
+                                                </button>
+                                                <div class="modal fade" id="ruby" tabindex="-1" aria-labelledby="rubyLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="rubyLabel">Desarrollos en Ruby</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div>
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Aplicación de metaprogramación reflection</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Uso de mixines y bloques de acuerdo a su contexto</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de frameworks</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/ruby.png" alt="Logo de Ruby">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Tecnologías de front-end</h5>
+
+                                        <ul class="part__content">
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#htmlcss">
+                                                    HTML - CSS
+                                                </button>
+                                                <div class="modal fade" id="htmlcss" tabindex="-1" aria-labelledby="htmlcssLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="htmlcssLabel">HTML - CSS</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Construcción de estructuras con etiquetas semánticas</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Creación de componentes con el estandar Bem y uso de variables para estandarización de una aplicación web</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Creación de animaciones</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Generación de un diseño responsive</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Uso de <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="content__link">bootstrap</a> para diseños de alta complejidad</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/htmlcss.png" alt="Logo de HTML5 y CSS">
+                                                                </picture>
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/bootstrap.png" alt="Logo de Bootstrap">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#javaScript">
+                                                    JavaScript
+                                                </button>
+                                                <div class="modal fade" id="javaScript" tabindex="-1" aria-labelledby="javaScriptLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="javaScriptLabel">JavaScript</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo vinculados al DOM y uso de librería <a href="https://api.jquery.com/" target="_blank" class="content__link">JQuery</a> para brindar dinamismo a los documentos HTML</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollos con <a href="https://es.vuejs.org/v2/guide/" target="_blank" class="content__link">Vue.js</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de carrousel con <a href="https://glidejs.com/docs/" target="_blank" class="content__link">Glide.js</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de alertas con <a href="https://sweetalert2.github.io/" target="_blank" class="content__link">Sweetalert</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/js.png" alt="Logo de JavaScript">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/vuejs.png" alt="Logo de VueJS">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/jquery.png" alt="Logo de JQuery">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Bases de datos</h5>
+
+                                        <ul class="part__content">
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#relacionales">
+                                                    SQL - PL/SQL
+                                                </button>
+                                                <div class="modal fade" id="relacionales" tabindex="-1" aria-labelledby="relacionalesLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="relacionalesLabel">Bases de datos relacionales</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de base de datos personal con la inclusión de vistas y demás objetos para realizar el proceso de Business Intelligence con el motor <a href="https://dev.mysql.com/doc/" target="_blank" class="content__link">MySQL</a> y el cliente <a href="https://dev.mysql.com/doc/workbench/en/" target="_blank" class="content__link">Workbench</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollos de objetos y consultas complejas en una base de datos productiva para potenciar las prácticas de SQL y PL-SQL con el motor <a href="https://learn.microsoft.com/en-us/previous-versions/sql/" target="_blank" class="content__link">SQL Server</a> y el cliente <a href="https://learn.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver16" target="_blank" class="content__link">SQL Server Management Studio</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Conexión y gestión de bases de datos utilizadas para el almacenamiento de los datos obtenidos en aplicaciones web propias con los motores <a href="https://www.postgresql.org/docs/" target="_blank" class="content__link">PostgreSQL</a> y <a href="https://dev.mysql.com/doc/" target="_blank" class="content__link">MySQL</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de base de datos personalizada en la plataforma <a href="https://www.teamdesk.net/help/overview/" target="_blank" class="content__link">Teamdesk</a>, junto con la automatización de procesos empresariales</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img">
+                                                                    <img src="../images/mysql.png" alt="Logo de MySQL">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/sqlserver.png" alt="Logo de SQL Server">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/postgresql.png" alt="Logo de PostgreSQL">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/teamdesk.svg" alt="Logo de Teamdesk">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Idiomas</h5>
+
+                                        <ul class="part__content">
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#ingles">
+                                                    Inglés
+                                                </button>
+                                                <div class="modal fade" id="ingles" tabindex="-1" aria-labelledby="inglesLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="inglesLabel">Inglés</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div>
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Graduado del profesorado de inglés del instituto <a href="https://www.emeico.com/" target="_blank" class="content__link">E.M.E.I</a></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Alto nivel de comprensión textual</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Alto nivel de lectoescritura y traducción de textos</li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Nivel intermedio de oratoria con pronunciación británica</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img">
+                                                                    <img src="../images/ingles.png" alt="Logo de banderas estadounidense y británica">
+                                                                </picture>
+                                                                <picture class="content__img">
+                                                                    <img src="../images/emei.png" alt="Logo de EMEI">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="content__part myBorder">
+                                <h4 class="part__title">Próximos objetivos</h4>
+                                <div class="part__body">
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Lenguajes de programación</h5>
+
+                                        <ul class="content__list">
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Introducción a los conceptos de Data Analysis y Machine Learning con R y Python</li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollos de app mobile con C# </li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de aplicaciones web con ASP.NET</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Tecnologías de front-end</h5>
+
+                                        <ul class="content__list">
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollo de aplicaciones web bajo el modelo cliente pesado con Angular o React</li>
+                                        </ul>
+                                    </div>
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Bases de datos</h5>
+
+                                        <ul class="content__list">
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Conexión y uso de base de datos NoSQL</li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Profundizar en el proceso de Business Intelligence</li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Preparación y manipulación de los datos para el análisis de los mismos</li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Desarrollos con arquitectura políglota</li>
+                                        </ul>
+                                    </div>
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Idiomas</h5>
+
+
+                                        <ul class="content__list">
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Aprobación del examen "First Certificate"</li>
+                                            <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Nivel avanzado en oratoria del inglés</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="perfil__item">
+                        <h3 class="perfil__subtitle subtitle__text">
+                            Habilidades blandas
+                        </h3>
+                        <div class="content__parts">
+                            <div class="content__part myBorder">
+                                <h4 class="part__title">Sociales</h4>
+                                <ul class="content__list">
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold">Escucha activa y empatía:</span> Ante las diferentes problemáticas que puedan estar atravesando compañeros y clientes, brindar posibles soluciones a las mismas de acuerdo al contexto del grupo de trabajo maximizando el aporte del mismo en lo que se quiere resolver.</p></li>
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold">Colaboración en el trabajo en grupo:</span> Ofrecer posturas sinceras a las soluciones aportadas o aportar las propias con el fin de conformar la solución más ideal posible en conjunto.</p></li>
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold">Liderazgo:</span> De acuerdo al contexto guiar y servir a mis compañeros en proyectar que cada uno pueda cumplir sus propositos para alcanzar las metas planteadas de manera grupal.</p>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content__part myBorder">
+                                <h4 class="part__title">Interpersonales</h4>
+    
+                                <ul class="content__list">
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold">Persistencia:</span> Pese a la dificultad de las problemáticas, aportar tiempo y dedicación necesaria para alcanzar soluciones de alta calidad y robustez.</p></li>
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold">Consistencia:</span> Adquirir conocimiento que permita reutilizarse en posteriores problemáticas de modo que cada una mantenga o incremente su valor obtenido en un primer momento.</p></li>
+                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"><span class="content__text-bold"></span>Adaptabilidad:</span> Ante el cambio de contextos o herramientas a utilizar, encontrar los patrones de trabajo adquiridos para enfrentar las nuevas problemáticas en diferentes escenarios.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="perfil__title">Proyectos</h2>
+                <ul class="section__subtitles">
+                    <li class="perfil__item">
+                        <div class="perfil__subtitle section__subtitle-flex">
+                            <h3 class="subtitle__text">
+                                Funkoshop
+                            </h3>
+                            <h3 class="subtitle__text">Codo a codo - 2023</h3>
+                        </div>
+                        
+                        <div class="content myBorder">
+                            <div class="part__body">
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Motivación</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            Desarrollo de aplicación web que simula el comportamiento de una tienda de Funkos y productos relacionados como remeras o llaveros de los mismos, atendiendo las necesidades de un comprador o administrador de la misma página.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Funcionalidades</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo y validación del registro y login de las cuentas de administradores.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Administración de los productos almacenados (alta, baja y modificación de estos).
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo de las compras de los productos 
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Uso de filtros para los productos tanto en la vista de comprador como la de adminastrador.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Paginación de la muestra de productos tanto en la vista de comprador como la de adminastrador.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Stack tecnológico</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Lenguaje de programación principal:</span> JavaScript
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Framework:</span> Express
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Template engine:</span> EJS
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Gestor de dependencias:</span> npm
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Motor de base de datos:</span> MySQL
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Links</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link tab-icon">
+                                                Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="content__text">
+                                            <a href="" target="_blank" class="content__link tab-icon">
+                                                Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <iframe class="iframe" src="http://localhost:4000/home" frameborder="0"></iframe>
+                        </div>
+                    </li>
+                    <li class="perfil__item">
+                        <div class="perfil__subtitle section__subtitle-flex">
+                            <h3 class="subtitle__text">
+                                RealTime
+                            </h3>
+                            <h3 class="subtitle__text">
+                                Diseño de sistemas - 2023
+                            </h3>
+                        </div>
+                        
+                        <div class="content myBorder">
+                            <div class="part__body">
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Motivación</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            Desarrollo de aplicación web que permite monitorear el estado de la prestación de servicios que resultan necesarios a las diferentes comunidades con movilidad reducida, y son proporcionados en diferentes establecimientos de determinadas entidades.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Funcionalidades</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Gestión de comunidades de cada usuario.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Apertura de incidentes en todas las comunidades, con una administración aislada de los mismos por cada comunidad.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Notificación de aperturas y revisión de incidentes hacia los compañeros de la comunidad del autor del incidente notificado.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo de login y registro, y validación de credenciales.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Gestión de roles.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Administración de usuarios para el rol de adminastrador.
+                                        </li>
+                                        <li class="part__item">
+                                            <span class="content__text  tab-icon">
+                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Consumos de API Rest: 
+                                            </span>
+                                            <ul class="content__list ">
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Georef:</span> Obtención de las provincias, municipios y departamentos para gestionarlos con cada usuario.
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Calculador de puntaje:</span> Actualizar semanalmente el puntaje de cada comunidad y miembro de la misma, condicionandolos por el mismo.
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Fusión de comunidades:</span> Fusionar comunidades, que son posibles de acuerdo a un análisis previo de la propia API Rest consumida.
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Actualización de intereses (incidentes a los que fue involucrado) de cada usuario.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Administración de entidades prestadoras y organismos de control mediante cargas de archivos.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Generación de rankings de los establecimientos y entidades respecto a los incidentes producidos.
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Stack tecnológico</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Lenguaje de programación principal:</span> Java
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Framework:</span> Javalin
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Template engine:</span> Handlebars
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Gestor de dependencias:</span> Maven
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">ORM:</span> Hibernate
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Motor de base de datos:</span> PostgreSQL
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Links</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon">
+                                                Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="content__text">
+                                            <a href="" target="_blank" class="content__link tab-icon">
+                                                Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <iframe class="iframe" src="http://localhost:4000/home" frameborder="0"></iframe>
+                        </div>
+                    </li>
+                    <li class="perfil__item">
+                        <div class="perfil__subtitle section__subtitle-flex">
+                            <h3 class="subtitle__text">
+                                Funkoshop
+                            </h3>
+                            <h3 class="subtitle__text">Codo a codo - 2023</h3>
+                        </div>
+                        
+                        <div class="content myBorder">
+                            <div class="part__body">
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Motivación</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            Desarrollo de aplicación web que simula el comportamiento de una tienda de Funkos y productos relacionados como remeras o llaveros de los mismos, atendiendo las necesidades de un comprados u administrados de la misma página.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item ">
+                                    <h5 class="part__subtitle">Funcionalidades</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo y validación del registro y login de las cuentas de administradores.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Administración de los productos almacenados (alta, baja y modificación de estos).
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Manejo de las compras de los productos 
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Uso de filtros para los productos tanto en la vista de comprador como la de adminastrador.
+                                        </li>
+                                        <li class="content__text tab-icon">
+                                            <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> Paginación de la muestra de productos tanto en la vista de comprador como la de adminastrador.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Stack tecnológico</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Lenguaje de programación principal:</span> JavaScript
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Framework:</span> Express
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Template engine:</span> EJS
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Gestor de dependencias:</span> npm
+                                        </li>
+                                        <li class="content__text">
+                                            <span class="content__text-bold">Motor de base de datos:</span> MySQL
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="part__item">
+                                    <h5 class="part__subtitle">Links</h5>
+                                    <ul class="content__list">
+                                        <li class="content__text">
+                                            <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link tab-icon">
+                                                Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                            </a>
+                                            
+                                        </li>
+                                        <li class="content__text">
+                                            <a href="" target="_blank" class="content__link tab-icon">
+                                                Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <iframe class="iframe" src="http://localhost:4000/home" frameborder="0"></iframe>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <nav class="navfooter container">
+                <ul class="navfooter__menu">
+                    <li class="navfooter__item">
+                        <a href="https://walink.co/f466aa" target="_blank" class="myIcon">
+                            <iconify-icon icon="dashicons:whatsapp" width="40" height="40"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="mailto:tomas.neznajko@gmail.com" target="_blank" class="myIcon">
+                            <iconify-icon icon="bxl:gmail" width="40" height="40"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="https://github.com/tomasneznajko" target="_blank" class="myIcon">
+                            <iconify-icon icon="bi:github" width="40" height="40"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a href="https://www.linkedin.com/in/tomas-neznajko-3a3453219/" target="_blank" class="myIcon">
+                            <iconify-icon icon="bi:linkedin" width="40" height="40"></iconify-icon>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <p class="footer__copy">
+                All rights reserved 2024 - Tomas Neznajko &copy;
+            </p>
+        
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var modalJava = new bootstrap.Modal(document.getElementById('java'));
+                var modalJS = new bootstrap.Modal(document.getElementById('js'));
+                var modalJS = new bootstrap.Modal(document.getElementById('js'));
+                // Repite para otros modales
+        
+                // Opcional: Mostrar el primer modal por defecto
+                myModal.show();
+            });
+        </script> -->
+    </body>
+</html>

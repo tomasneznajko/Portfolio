@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Al agregar margen, se reduce el espacio reservado al contenido*/
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+
+}
+
+a {
+    font-family: var(--alternative-font);
+    text-decoration: none;
+    color: inherit;
+}
+
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+ul, ol{
+    list-style-type: none;
+    color: white;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.myContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+

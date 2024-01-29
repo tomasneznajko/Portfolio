@@ -1,0 +1,17 @@
+@import 'normalizate.css';
+@import 'variables.css';
+@import '../partials/header.css';
+@import '../partials/footer.css';
+
+
+
+
+/*ALERT*/
+
+/* .swal-custom-size {
+    left: 50%;
+    top: 50%;
+    width: 20rem; 
+    height: 40rem; 
+}  */
+
