@@ -25,7 +25,8 @@
 }
 
 .content__text{
-    font-size: var(--font-xsmall);
+    /* font-family: var(--alternative-font); */
+    font-size: var(--font-small);
     color: var(--dark-solid);
 }
 
@@ -34,7 +35,7 @@
 }
 
 .content__link{
-    color:  var(--primary-solid);
+    color:  var(--secondary-solid);
 }
 
 

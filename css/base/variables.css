@@ -27,6 +27,7 @@
     /* Typography */
     --base-font: 'Inter', sans-serif;
     --alternative-font: 'Raleway', sans-serif;
+    --name-font: 'Tommy';
     
     /* Font Sizes */
     --font-display: 4.6rem; 

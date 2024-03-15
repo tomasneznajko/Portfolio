@@ -1,34 +1,37 @@
 /* HEADER */
 
+@font-face {
+    font-family: 'hola';
+    src: url('../fonts/brittany_signature/BrittanySignature.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header{
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-24);
-    z-index: 4;
+    z-index: 1;
 }
 
-.navbar{
+.navbar-me{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar__menu{
+.navbar__menu-me{
     display: flex;
     gap: var(--spacing-20);
     align-items: center;
 }
 
-.navbar__logo{
+.navbar__logo-me{
     display: inline-block;
     font-size: var(--font-medium);
-    font-family: var(--firm-font);
-    padding: var(--spacing-8) var(--spacing-16);
-    transition: background .3s ease-in-out;
-    position: relative;
-    color: var(--light-font-solid);
+    font-family: 'Raleway';
 }
 
-.navbar__link{
+.navbar__link-me{
     display: inline-block;
     font-size: var(--font-medium);
     padding: var(--spacing-8) var(--spacing-16);
@@ -37,7 +40,7 @@ header{
     color: var(--light-font-solid);
 }
 
-.navbar__link:hover{
+.navbar__link-me:hover{
     background-color: var(--primary-900);
 }
 
@@ -47,34 +50,29 @@ header{
     padding: var(--spacing-8);
 }
 
-.submenu{
+.submenu-me{
     display: none;
     width: 30rem;
     position: absolute;
     background-color: var(--dark-bg-solid);
     z-index: 3;
+    
 }
 
-.submenu__link{
+.submenu__link-me{
     display: block;
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
 }
 
-.with-submenu:hover .submenu{
+.with-submenu:hover .submenu-me{
     display: block;
+    margin-left: var(--spacing-8);
 }
 
 
-.submenu__link:hover{
+.submenu__link-me:hover{
     background-color: var(--primary-900);
 }
 
-.navbar__cart{
-    transition: background .3s ease-in-out;
-}
-
-.navbar__cart:hover img{
-    filter: brightness(0) saturate(100%) invert(30%) sepia(40%) saturate(5924%) hue-rotate(343deg) brightness(104%) contrast(90%);
-}
