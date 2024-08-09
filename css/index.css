@@ -3,6 +3,7 @@
 @import url('sections/content.css');
 @import url('sections/icons.css');
 @import url('sections/front_page.css');
+@import url('sections/proyect.css');
 
 .main{
     display: flex;
@@ -24,7 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-12);
     padding: 0 var(--spacing-36);
     padding-bottom: var(--spacing-36);
 }
@@ -126,3 +126,5 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+

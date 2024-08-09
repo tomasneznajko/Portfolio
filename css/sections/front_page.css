@@ -1,5 +1,5 @@
 .hero{
-    background-image: url(../../images/foto_perfil.jpg);
+    background-image: url(../../images/fotoPortada.jpg);
     padding: var(--spacing-128);
     background-size: cover;
     background-attachment: fixed;
