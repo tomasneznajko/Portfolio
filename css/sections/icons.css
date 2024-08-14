@@ -3,3 +3,8 @@
     gap: var(--spacing-8);
     align-items: center;
 }
+
+/* .flex-align{
+    display: flex;
+    align-items: center;
+} */

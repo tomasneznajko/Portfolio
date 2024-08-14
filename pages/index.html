@@ -9,7 +9,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/index.css">
-        
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="../js/emailJS.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "MS5CukoDAMkhIH-qI",
+                });
+            })();
+        </script>
     </head>
     <body>
         <header>
@@ -56,13 +66,52 @@
                                     Realtime
                                 </a>
                             </li>
+                            <li class="submenu__item-me">
+                                <a href="#proyecto-tuki" class="submenu__link-me">
+                                    T.U.K.I
+                                </a>
+                            </li>
+
 
                         </ul>
                     </li>
                     <li class="navbar__item-me">
-                        <a href="#contacto" class="navbar__link-me">
+                        <a href="#contacto" class="navbar__link-me" data-bs-toggle="modal" data-bs-target="#contacto">
                             Contacto
                         </a>
+                        <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="contactoLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title tab-icon" id="contactoLabel">Hablemos <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m2.8 9.857a1 1 0 1 1 1.4 1.428A5.98 5.98 0 0 1 12 17a5.98 5.98 0 0 1-4.2-1.715a1 1 0 0 1 1.4-1.428A3.98 3.98 0 0 0 12 15c1.09 0 2.077-.435 2.8-1.143M8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"/></g></svg></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body content">
+        
+                                    <div class="login__form">
+                                        <div class="form__box--flex">
+                                            <label class="form__label" for="correo">Correo:</label>
+                                            <input class="form__input form__text" type="email" name="correo" id="correo" placeholder="@gmail.com" required>
+                                        </div>
+                                        <div class="form__box--flex">
+                                            <label class="form__label" for="asunto">Motivo:</label>
+                                            <input class="form__input form__text" type="text" name="asunto" id="asunto">
+                                        </div>
+                                        <div class="form__box--flex">
+                                            <label class="form__label" for="mensaje">Mensaje:</label>
+                                            <textarea class="form__textarea form__text" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¡Hola, Tomás!"></textarea>
+                                        </div>                
+                                        
+                                        <div class="form__flex">
+                                            <button type="submit" class="button part__btn" onclick="sendEmail()">
+                                                Enviar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
             </nav>
@@ -82,7 +131,7 @@
                 <!-- <p class="hero__description">
                     Descubrí el próximo Funko Pop de tu colección
                 </p> -->
-                <a class="hero__link">
+                <a class="hero__link" href="../images/Tomas Esteban Neznajko CV.pdf" download="Tomas_Esteban_Neznajko_CV.pdf">
                     Descargar CV
                 </a>
             </article>
@@ -98,7 +147,7 @@
                         </h3>
                         <div class="content myBorder">
                             <p class="content__text">
-                                Soy un estudiante en ingeniería en sistemas de información con el sueño de ejercer un cargo de liderazgo en el ámbito de desarrollo de sistemas de continuo crecimiento y perfección junto a compañeros de equipo con los cuales pueda acompañar y apoyar para lograr soluciones de gran calidad.
+                                Soy un estudiante en ingeniería en sistemas de información y desarrollador ETL con el sueño de ejercer un cargo de liderazgo en el ámbito de desarrollo de software de continuo crecimiento y perfección junto a compañeros de equipo con los cuales pueda acompañar y apoyar para lograr soluciones de gran calidad.
 
                             </p>
                             <!-- <picture class="myBorder">
@@ -112,7 +161,7 @@
                         </h3>
                         <div class="content__parts">
                             <div class="content__part myBorder">
-                                <h4 class="part__title">Actualidad</h4>
+                                <!-- <h4 class="part__title">Actualidad</h4> -->
                                 <div class="part__body">
                                     <div class="part__item">
                                         <h5 class="part__subtitle">Lenguajes de programación</h5>
@@ -332,6 +381,79 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Desarrollo ETL</h5>
+
+                                        <ul class="part__content">
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#abinitio">
+                                                    Ab Initio
+                                                </button>
+                                                <div class="modal fade" id="abinitio" tabindex="-1" aria-labelledby="abinitioLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="abinitioLabel">Desarrollos en Ab Initio</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Desarrollos que garanticen reutilización y mantenibilidad de estructuras y transformaciones de datos mediante archivos XFR y DML.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Desarrollos con paralelismos a nivel datos, componentes y grafos.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso de componentes de varias etapas en la transformación.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Desarrollos con pset y variables globales, que permiten la reutilización de parámetros en diferentes grafos y el manejo de ambientes en cada uno de ellos.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Inyección SQL que permite la extracción y carga en bases de datos relacionales.</p></li>
+                                                                    <!-- <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso de planes para la orquestación y control de la ejecución de múltiples grafos o scripts.</p></li> -->
+                                                                    <!-- <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso y parametrización del protocolo NDM para el intercambio de archivos.</p></li> -->
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/AB-INITIO-logo.webp" alt="Logo de Ab Initio">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#talend">
+                                                    Talend
+                                                </button>
+                                                <div class="modal fade" id="talend" tabindex="-1" aria-labelledby="talendLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="talendLabel">Desarrollos en Talend Studio</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso de variables de contexto para el manejo de ambientes.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso de joblets y subjobs para garantizar mantenibilidad y reutilización.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejo de triggers para gestionar el control de la ejecución.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Unificación o diversificación de flujos procesables.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Inyección de código Java y uso de rutinas para su reutilización y personalización.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejo de paralelismo con procesamiento multihilos.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Uso de Git dentro de la herramienta.</p></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/TalendLogo.png" alt="Logo de Talend">
+                                                                </picture>
+                                                            </div>
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
 
                                     <div class="part__item">
                                         <h5 class="part__subtitle">Tecnologías de front-end</h5>
@@ -496,7 +618,7 @@
 
                                 </div>
                             </div>
-                            <div class="content__part myBorder">
+                            <!-- <div class="content__part myBorder">
                                 <h4 class="part__title">Próximos objetivos</h4>
                                 <div class="part__body">
                                     <div class="part__item">
@@ -536,7 +658,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </li>
                     <li id="perfil-blandas" class="perfil__item">
@@ -620,11 +742,11 @@
                                                 </a>
                                                 
                                             </li>
-                                            <li class="content__text">
+                                            <!-- <li class="content__text">
                                                 <a href="" target="_blank" class="content__link tab-icon">
                                                     Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -712,11 +834,11 @@
                                                 </a>
                                                 
                                             </li>
-                                            <li class="content__text">
+                                            <!-- <li class="content__text">
                                                 <a href="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" target="_blank" class="content__link tab-icon">
                                                     Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
                                                 </a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -744,7 +866,7 @@
                                             </li>
                                             <li class="part__item">
                                                 <span class="content__text  tab-icon">
-                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text link_extra">Consumos de API Rest <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon"  data-bs-toggle="modal" data-bs-target="#api_rest">(más detalles aquí) </a></p>
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text link_extra">Consumos de API Rest <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon"  data-bs-toggle="modal" data-bs-target="#api_rest">(más detalles aquí) </a>.</p>
                                                 </span>
                                                 <div class="modal fade" id="api_rest" tabindex="-1" aria-labelledby="inglesLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
@@ -760,10 +882,10 @@
                                                                     <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Georef: </span>Obtención de las provincias, municipios y departamentos para gestionarlos con cada usuario.</p>
                                                                 </li>
                                                                 <li class="content__text tab-icon">
-                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Calculador de puntaje: </span>Actualizar semanalmente el puntaje de cada comunidad y miembro de la misma, condicionándolos por el mismo.</p>
+                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Calculador de puntaje: </span>Actualizar semanalmente el puntaje de cada comunidad y miembro de la misma, condicionándolos por el mismo. <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link"> Repositorio aquí.</a></p>
                                                                 </li>
                                                                 <li class="content__text tab-icon">
-                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Fusión de comunidades: </span>Fusionar comunidades, que son posibles de acuerdo a un análisis previo de la propia API Rest consumida.</p>
+                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Fusión de comunidades: </span>Fusionar comunidades, que son posibles de acuerdo a un análisis previo de la propia API Rest consumida. <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link"> Repositorio aquí.</a></p>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -792,9 +914,9 @@
                             <!-- <iframe class="iframe" src="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" frameborder="0"></iframe> -->
                         </div>
                     </li>
-                    <li class="perfil__item">
+                    <li class="perfil__item" id="proyecto-tuki">
                         <div class="perfil__subtitle section__subtitle-flex">
-                            <h3 class="subtitle__text">
+                            <h3 class="subtitle__text" >
                                 T.U.K.I (The Ultimate Kernel Implementation)
                             </h3>
                             <h3 class="subtitle__text">Sistemas operativos - 2023</h3>
@@ -835,15 +957,27 @@
                                                 </a>
                                                 
                                             </li>
-                                            <li class="content__text">
-                                                <a href="" target="_blank" class="content__link tab-icon">
-                                                    Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="part__items">
+                                    <div class="part__item">
+                                        <h5 class="part__subtitle">Funcionalidades generales</h5>
+                                        <ul class="content__list">
+                                            <li class="content__text tab-icon">
+                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Levantar archivos de configuración con la información necesaria para ejecutar las funcionalidades particulares de cada módulo.</p>
+                                            </li>
+                                            <li class="content__text tab-icon">
+                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Usar <a href="https://github.com/sisoputnfrba/so-commons-library" target="_blank" class="content__link">Commons Library</a> para el manejo de estructuras de datos, archivos de configuración y logs.</p>
+                                            </li>
+                                            <li class="content__text tab-icon">
+                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Definir protocolo de comunicación que permita el envío de paquetes, que deben serializarse al recibirse, utilizando arquitectura cliente-servidor entre diferentes procesos de la misma red.</p>
+                                            </li>
+                                            <li class="content__text tab-icon">
+                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Envío de diferentes tipos de logs que informen el estado actual del procesamiento en un módulo particular.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div class="part__item ">
                                         <h5 class="part__subtitle">Módulos</h5>
                                         <ul class="part__content part__item-content">
@@ -862,34 +996,11 @@
                                 
                                                             <div >
                                                                 <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar archivo de configuración para su conexión con Kernel.</p></li>
                                                                     <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar e interpretar archivo con pseudocódigo para generar el listado de instrucciones de un proceso.</p></li>
                                                                     <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Conectarse con Kernel, enviarle el listado de instrucciones y esperar la finalización de su procesamiento.</p></li>
                                                                 </ul>
                                                             </div>
-                                                            <!-- <div class="content__images">
-                                                                <picture class="content__img-main">
-                                                                    <img src="../images/java.png" alt="Logo de Java">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/hibernate.png" alt="Logo de Hibernate">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/javalin.png" alt="Logo de Javalin">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/swagger.png" alt="Logo de Swagger">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/maven.png" alt="Logo de Maven">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/junit.png" alt="Logo de JUnit">
-                                                                </picture>
-                                                                <picture class="content__img">
-                                                                    <img src="../images/mockito.png" alt="Logo de Mockito">
-                                                                </picture>
-                                                            </div> -->
+                    
                                                         </div>
                                                     </div>
                                                 </div>
@@ -919,12 +1030,6 @@
                                                                     <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Orquestar las llamadas a File System, implementando una tabla global de archivos abiertos y bloqueos exclusivos y obligatorios para la gestión de los mismos.</p></li>
                                                                 </ul>
                                                             </div>
-                                                            <!-- <div class="content__images">
-                                                                <picture class="content__img-main">
-                                                                    <img src="../images/c.png" alt="Logo de C">
-                                                                </picture>
-                                                            </div> -->
-    
                                                         </div>
                                                     </div>
                                                 </div>
@@ -968,8 +1073,11 @@
                                 
                                                             <div>
                                                                 <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> </p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Desarrollo de web scraping con <a href="https://www.selenium.dev/selenium/docs/api/py/api.html#" target="_blank" class="content__link">selenium</a></p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Responder los pedidos realizados por la CPU para leer y/o escribir en los segmentos de datos del proceso en ejecución.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear y gestionar las estructuras administrativas necesarias al establecer conexión con Kernel, CPU y File System: Espacio contiguo de memoria asignado al usuario para que los procesos lean y escriban, y estructuras auxiliares para la implementación de segmentación (tablas de segmentos y lista de huecos libres).</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejar esquema de segmentación, utilizando los algoritmos first fit, best fit y worst fit para la ubicación de los segmentos en los espacios libres.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Simular velocidad de accesos a Memoria dando un tiempo de espera ante solicitudes de acceso al espacio de usuario de CPU o Kernel.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Implementar proceso de compactación al contar con espacio necesario para la creación de un segmento solicitado, requiriendo de juntar huecos libres para asignar un espacio contiguo e informar la actualización de la tabla de segmentos a Kernel.</p></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -977,30 +1085,26 @@
                                                 </div>
                                             </li>
                                             <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#scala">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#File_System">
                                                     File System
                                                 </button>
                                                 
-                                                <div class="modal fade" id="scala" tabindex="-1" aria-labelledby="scalaLabel" aria-hidden="true">
+                                                <div class="modal fade" id="File_System" tabindex="-1" aria-labelledby="File_SystemLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h1 class="modal-title" id="scalaLabel">Desarrollos en Scala</h1>
+                                                            <h1 class="modal-title" id="File_SystemLabel">File System</h1>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body content">
     
                                                             <div>
                                                                 <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Desarrollo de dominios con paradigma híbrido objeto-funcional</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejo de tipos (Bound types, varianza de tipos, tipos genéricos)</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Implementaciones de mónadas</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Persistir información por medio de archivos configurados dentro del archivo de configuración.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar bitmap de bloques y recorrer directorio de FCBs para crear estructuras administrativas que permita administrar los archivos al haber establecido comunicación con Memoria como cliente.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Atender las solicitudes del Kernel, como servidor, mediante las operaciones abrir, crear, truncar, leer y escribir un archivo.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Mantener actualizadas en disco todas las operaciones realizadas sobre los FCBs, Bitmap y Bloques.</p></li>
                                                                 </ul>
-                                                            </div>
-                                                            <div class="content__images">
-                                                                <picture class="content__img-main">
-                                                                    <img src="../images/scala.png" alt="Logo de Scala">
-                                                                </picture>
                                                             </div>
                                                         </div>
                                                     </div>

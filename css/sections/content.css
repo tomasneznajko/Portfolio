@@ -36,8 +36,12 @@
 
 .content__link{
     color:  var(--secondary-solid);
+    transition: color .3s ease-in-out;
 }
 
+.content__link:hover{
+    color:  var(--primary-900);
+}
 
 
 .content__images{
@@ -62,6 +66,6 @@
     flex-direction: column;
     gap: var(--spacing-8);
 
-    width: 50%;
+    width: 100%;
     padding: var(--spacing-8);
 }
