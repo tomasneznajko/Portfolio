@@ -17,7 +17,7 @@ function sendEmail(){
             document.querySelector('#asunto').value = "";
             document.querySelector('#mensaje').value = "";
             console.log(res);
-            alert("Su mensaje tititititiritiritirititititititiritiritirititititititiritiritiriti ha sido enviado correctamente!");
+            alert("Su mensaje tititititiritiritirititititititiritiritirititititititiritiritiri ha sido enviado correctamente!");
             const modalElement = document.querySelector('#contacto');
             const modal = bootstrap.Modal.getInstance(modalElement);
             modal.hide();
