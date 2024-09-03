@@ -1,0 +1,7 @@
+
+/* Media query para dispositivos pequeños (celulares) */
+@media only screen and (max-width: 480px) {
+    .navbar-me, .navbar__menu-me {
+        flex-direction: column;
+    }
+}

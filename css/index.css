@@ -6,8 +6,8 @@
 @import url('sections/proyect.css');
 @import url('sections/form.css');
 
-
-
+@import url('responsive/tablet.css');
+@import url('responsive/celular.css');
 .main{
     display: flex;
     flex-direction: column;
