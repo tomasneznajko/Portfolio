@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
         <link rel="stylesheet" href="../css/index.css">
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -57,22 +58,22 @@
                         </a>
                         <ul class="submenu-me">
                             <li class="submenu__item-me">
-                                <a href="#proyecto-showtime" class="submenu__link-me">
+                                <a href="#proyecto-showtime" class="submenu__link-me" data-carousel>
                                     Showtime
                                 </a>
                             </li>
                             <li class="submenu__item-me">
-                                <a href="#proyecto-funkoshop" class="submenu__link-me">
+                                <a href="#proyecto-funkoshop" class="submenu__link-me" data-carousel>
                                     Funkoshop
                                 </a>
                             </li>
                             <li class="submenu__item-me">
-                                <a href="#proyecto-realtime" class="submenu__link-me">
+                                <a href="#proyecto-realtime" class="submenu__link-me" data-carousel>
                                     Realtime
                                 </a>
                             </li>
                             <li class="submenu__item-me">
-                                <a href="#proyecto-tuki" class="submenu__link-me">
+                                <a href="#proyecto-tuki" class="submenu__link-me" data-carousel>
                                     T.U.K.I
                                 </a>
                             </li>
@@ -525,6 +526,35 @@
                                                     </div>
                                                 </div>
                                             </li>
+                                            <li class="part__item">
+                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#reactjs">
+                                                    React js
+                                                </button>
+                                                <div class="modal fade" id="reactjs" tabindex="-1" aria-labelledby="reactjsLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="reactjsLabel">React.js</h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body content">
+                                
+                                                            <div >
+                                                                <ul class="content__list">
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de librería <a href="https://reactrouter.com/home" target="_blank" class="content__link">react-router</a> para transiciones páginas.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Uso de los hooks <a href="https://react.dev/reference/react/useState" target="_blank" class="content__link">useState</a> y <a href="https://react.dev/reference/react/useEffect" target="_blank" class="content__link">useEffect</a> para los cambios reactivos del documento HTML, alterando el estado y generando efectos secundarios respectivamente. Esto permite integración con el paradigma funcional.</p></li>
+                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Realización de solicitudes http desde el navegador mediante la librería <a href="https://axios-http.com/docs/intro" target="_blank" class="content__link">axios</a>.</p></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content__images">
+                                                                <picture class="content__img-main">
+                                                                    <img src="../images/react-2.svg" alt="Logo de React.js">
+                                                                </picture>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="part__item">
@@ -686,538 +716,546 @@
                     </li>
                 </ul>
             </section>
-            <section id="proyectos">
+            <section class="glide" id="proyectos">
                 <h2 class="perfil__title">Proyectos</h2>
-                <ul class="section__subtitles">
-                    <li class="perfil__item">
-                        <div class="perfil__subtitle section__subtitle-flex">
-                            <h3 class="subtitle__text" id="proyecto-showtime">
-                                Show time!
-                            </h3>
-                            <h3 class="subtitle__text">T.A.C.S - 2024</h3>
-                        </div>
-                        
-                        <div class="content myBorder">
-                            <div class="proyect">
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Motivación</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                Desarrollo de aplicación web que simula el comportamiento de una aplicación de venta de tickets a espectaculos, permitiendo la alta concurrencia de usuarios accionar sobre la misma.
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Stack tecnológico</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Lenguaje de programación principal:</span> Java
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Framework de back-end:</span> Spring Boot
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Gestor de dependencias del back-end:</span> Maven
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Framework de front-end:</span> React Js
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Gestor de dependencias del front-end:</span> npm
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Motor de base de datos para alto volumen:</span> Mongo DB
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Persistencia en memoria:</span> Redis
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Links</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <a href="https://github.com/NahuelFarias/tacs-2024-2C" target="_blank" class="content__link tab-icon">
-                                                    Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
-                                                </a>
-                                                
-                                            </li>
-                                            <!-- <li class="content__text">
-                                                <a href="" target="_blank" class="content__link tab-icon">
-                                                    Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
-                                                </a>
-                                            </li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Funcionalidades</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo y validación del registro y login de las cuentas mediante una implementación JWT y hasheo de contraseñas para el front-end convencional, y mediante manejo de token temporal con envío de mail para la integración con telegram.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de roles mediante Spring Security.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Aplicación front-end consumiendo al back-end mediante el mecanismo de mensajería API Rest, siendo un SPA del tipo renderizado desde el lado del cliente.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de las reservas de tickets individuales de cada usuario.</p> 
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Establecer el concepto de infraestructura como código mediante la dockerización de cada uno de los servicios implementados y orquestar los mismos mediante docker compose.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Obtención de métricas core del sistema, siendo visualizadas únicamente por administradores.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Integración con telegram para ofrecer un front-end alternativo mediante el uso de códigos enviados a un Bot de telegram mediante una implementación webhook.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Asegurar consistencia de documentos mediante findAndModify y su sincronismo por transaccionalidad.</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide" id="proyecto-showtime" data-project-index="0">
+                            <div class="perfil__subtitle section__subtitle-flex">
+                                <h3 class="subtitle__text">
+                                    Show time!
+                                </h3>
+                                <h3 class="subtitle__text">T.A.C.S - 2024</h3>
                             </div>
-
-
-                            <!-- <iframe class="iframe" src="https://funkoshopnodejs-production.up.railway.app/home" frameborder="0"></iframe> -->
-                        </div>
-                    </li>
-                    <li class="perfil__item">
-                        <div class="perfil__subtitle section__subtitle-flex">
-                            <h3 class="subtitle__text" id="proyecto-funkoshop">
-                                Funkoshop
-                            </h3>
-                            <h3 class="subtitle__text">Codo a codo - 2023</h3>
-                        </div>
-                        
-                        <div class="content myBorder">
-                            <div class="proyect">
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Motivación</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                Desarrollo de aplicación web que simula el comportamiento de una tienda de Funkos y productos relacionados como remeras o llaveros de los mismos, atendiendo las necesidades de un comprador o administrador de la misma página.
-                                            </li>
-                                        </ul>
+                            
+                            <div class="content myBorder">
+                                <div class="proyect">
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Motivación</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    Desarrollo de aplicación web que simula el comportamiento de una aplicación de venta de tickets a espectaculos, permitiendo la alta concurrencia de usuarios accionar sobre la misma.
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Stack tecnológico</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Lenguaje de programación principal:</span> Java
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Framework de back-end:</span> Spring Boot
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Gestor de dependencias del back-end:</span> Maven
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Framework de front-end:</span> React Js
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Gestor de dependencias del front-end:</span> npm
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Motor de base de datos para alto volumen:</span> Mongo DB
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Persistencia en memoria:</span> Redis
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Links</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <a href="https://github.com/NahuelFarias/tacs-2024-2C" target="_blank" class="content__link tab-icon">
+                                                        Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <!-- <li class="content__text">
+                                                    <a href="" target="_blank" class="content__link tab-icon">
+                                                        Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Funcionalidades</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo y validación del registro y login de las cuentas mediante una implementación JWT y hasheo de contraseñas para el front-end convencional, y mediante manejo de token temporal con envío de mail para la integración con telegram.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de roles mediante Spring Security.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Aplicación front-end consumiendo al back-end mediante el mecanismo de mensajería API Rest, siendo un SPA del tipo renderizado desde el lado del cliente.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de las reservas de tickets individuales de cada usuario.</p> 
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Establecer el concepto de infraestructura como código mediante la dockerización de cada uno de los servicios implementados y orquestar los mismos mediante docker compose.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Obtención de métricas core del sistema, siendo visualizadas únicamente por administradores.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Integración con telegram para ofrecer un front-end alternativo mediante el uso de códigos enviados a un Bot de telegram mediante una implementación webhook.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Asegurar consistencia de documentos mediante findAndModify y su sincronismo por transaccionalidad.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
     
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Stack tecnológico</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Lenguaje de programación principal:</span> JavaScript
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Framework:</span> Express
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Template engine:</span> EJS
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Gestor de dependencias:</span> npm
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Motor de base de datos:</span> MySQL
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Links</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link tab-icon">
-                                                    Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
-                                                </a>
-                                                
-                                            </li>
-                                            <!-- <li class="content__text">
-                                                <a href="" target="_blank" class="content__link tab-icon">
-                                                    Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
-                                                </a>
-                                            </li> -->
-                                        </ul>
-                                    </div>
+    
                                 </div>
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Funcionalidades</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo y validación del registro y login de las cuentas de administradores.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Administración de los productos almacenados (alta, baja y modificación de estos).</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de las compras de los productos.</p> 
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Uso de filtros para los productos tanto en la vista de comprador como la de adminastrador.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Paginación de la muestra de productos tanto en la vista de comprador como la de adminastrador.</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-
+    
+    
+                                <!-- <iframe class="iframe" src="https://funkoshopnodejs-production.up.railway.app/home" frameborder="0"></iframe> -->
                             </div>
-
-
-                            <!-- <iframe class="iframe" src="https://funkoshopnodejs-production.up.railway.app/home" frameborder="0"></iframe> -->
-                        </div>
-                    </li>
-                    <li class="perfil__item">
-                        <div class="perfil__subtitle section__subtitle-flex">
-                            <h3 class="subtitle__text" id="proyecto-realtime">
-                                RealTime
-                            </h3>
-                            <h3 class="subtitle__text">
-                                Diseño de sistemas - 2023
-                            </h3>
-                        </div>
-                        
-                        <div class="content myBorder">
-                            <div class="proyect">
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Motivación</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                Desarrollo de aplicación web que permite monitorear el estado de la prestación de servicios que resultan necesarios a las diferentes comunidades con movilidad reducida, y son proporcionados en diferentes establecimientos de determinadas entidades.
-                                            </li>
-                                        </ul>
-                                    </div>
-    
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Stack tecnológico</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Lenguaje de programación principal:</span> Java
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Framework:</span> Javalin
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Template engine:</span> Handlebars
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Gestor de dependencias:</span> Maven
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">ORM:</span> Hibernate
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Motor de base de datos:</span> PostgreSQL
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Links</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon">
-                                                    Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
-                                                </a>
-                                                
-                                            </li>
-                                            <!-- <li class="content__text">
-                                                <a href="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" target="_blank" class="content__link tab-icon">
-                                                    Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
-                                                </a>
-                                            </li> -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="part__items">
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Funcionalidades</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de comunidades de cada usuario como administrador.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Apertura de incidentes en todas las comunidades, con una administración aislada de los mismos por cada comunidad.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Notificación de aperturas y revisión de incidentes hacia los compañeros de la comunidad del autor del incidente notificado.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de login y registro, y validación de credenciales.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de roles mediante middlewares.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de usuarios para el rol de adminastrador.</p>
-                                            </li>
-                                            <li class="part__item">
-                                                <span class="content__text  tab-icon">
-                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text link_extra">Consumos de API Rest <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon"  data-bs-toggle="modal" data-bs-target="#api_rest">(más detalles aquí) </a>.</p>
-                                                </span>
-                                                <div class="modal fade" id="api_rest" tabindex="-1" aria-labelledby="inglesLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="inglesLabel">API Rest utilizadas</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
-                                
-                                                            <ul class="content__list">
-                                                                <li class="content__text tab-icon">
-                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Georef: </span>Obtención de las provincias, municipios y departamentos para gestionarlos con cada usuario.</p>
-                                                                </li>
-                                                                <li class="content__text tab-icon">
-                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Calculador de puntaje: </span>Actualizar semanalmente el puntaje de cada comunidad y miembro de la misma, condicionándolos por el mismo. <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link"> Repositorio aquí.</a></p>
-                                                                </li>
-                                                                <li class="content__text tab-icon">
-                                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Fusión de comunidades: </span>Fusionar comunidades, que son posibles de acuerdo a un análisis previo de la propia API Rest consumida. <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link"> Repositorio aquí.</a></p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-    
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text">Actualización de intereses (incidentes a los que fue involucrado) de cada usuario.</p> 
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Administración de entidades prestadoras y organismos de control mediante cargas de archivos.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Generación de rankings de los establecimientos y entidades respecto a los incidentes producidos.</p>
-                                            </li>
-                                        </ul>
-    
-                                    </div>
-                                </div>
-
+                        </li>
+                        <li class="glide__slide" id="proyecto-funkoshop" data-project-index="1">
+                            <div class="perfil__subtitle section__subtitle-flex">
+                                <h3 class="subtitle__text">
+                                    Funkoshop
+                                </h3>
+                                <h3 class="subtitle__text">Codo a codo - 2023</h3>
                             </div>
-
-
-                            <!-- <iframe class="iframe" src="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" frameborder="0"></iframe> -->
-                        </div>
-                    </li>
-                    <li class="perfil__item" id="proyecto-tuki">
-                        <div class="perfil__subtitle section__subtitle-flex">
-                            <h3 class="subtitle__text" >
-                                T.U.K.I (The Ultimate Kernel Implementation)
-                            </h3>
-                            <h3 class="subtitle__text">Sistemas operativos - 2023</h3>
-                        </div>
-                        
-                        <div class="content myBorder">
-                            <div class="proyect">
-                                <div class="part__items">
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Motivación</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                               Simulación de un sistema sistema distribuido, donde se planifican procesos, se resuelven peticiones al sistema y se administran de manera adecuada una Memoria y un sistema de archivos bajo determinados esquemas.
-                                            </li>
-                                        </ul>
+                            
+                            <div class="content myBorder">
+                                <div class="proyect">
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Motivación</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    Desarrollo de aplicación web que simula el comportamiento de una tienda de Funkos y productos relacionados como remeras o llaveros de los mismos, atendiendo las necesidades de un comprador o administrador de la misma página.
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Stack tecnológico</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Lenguaje de programación principal:</span> JavaScript
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Framework:</span> Express
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Template engine:</span> EJS
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Gestor de dependencias:</span> npm
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Motor de base de datos:</span> MySQL
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Links</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <a href="https://github.com/tomasneznajko/FunkoShop_NodeJs" target="_blank" class="content__link tab-icon">
+                                                        Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <!-- <li class="content__text">
+                                                    <a href="" target="_blank" class="content__link tab-icon">
+                                                        Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Funcionalidades</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo y validación del registro y login de las cuentas de administradores.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Administración de los productos almacenados (alta, baja y modificación de estos).</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de las compras de los productos.</p> 
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Uso de filtros para los productos tanto en la vista de comprador como la de adminastrador.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Paginación de la muestra de productos tanto en la vista de comprador como la de adminastrador.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
     
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Stack tecnológico</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Lenguaje de programación principal:</span> C
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Framework:</span> Valgrind (Memcheck + Helgrind)
-                                            </li>
-                                            <li class="content__text">
-                                                <span class="content__text-bold">Automatizador de compilación:</span> Makefiles
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Links</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text">
-                                                <a href="https://github.com/tomasneznajko/TP_SO_Grupo_Asado" target="_blank" class="content__link tab-icon">
-                                                    Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
-                                                </a>
-                                                
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="part__items">
-                                    <div class="part__item">
-                                        <h5 class="part__subtitle">Funcionalidades generales</h5>
-                                        <ul class="content__list">
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Levantar archivos de configuración con la información necesaria para ejecutar las funcionalidades particulares de cada módulo.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Usar <a href="https://github.com/sisoputnfrba/so-commons-library" target="_blank" class="content__link">Commons Library</a> para el manejo de estructuras de datos, archivos de configuración y logs.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Definir protocolo de comunicación que permita el envío de paquetes, que deben serializarse al recibirse, utilizando arquitectura cliente-servidor entre diferentes procesos de la misma red.</p>
-                                            </li>
-                                            <li class="content__text tab-icon">
-                                                <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Envío de diferentes tipos de logs que informen el estado actual del procesamiento en un módulo particular.</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="part__item ">
-                                        <h5 class="part__subtitle">Módulos</h5>
-                                        <ul class="part__content part__item-content">
-                                            <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#consola">
-                                                    Consola
-                                                </button>
-                                                <div class="modal fade" id="consola" tabindex="-1" aria-labelledby="consolaLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="consolaLabel">Consola</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
-                                
-                                                            <div >
-                                                                <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar e interpretar archivo con pseudocódigo para generar el listado de instrucciones de un proceso.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Conectarse con Kernel, enviarle el listado de instrucciones y esperar la finalización de su procesamiento.</p></li>
-                                                                </ul>
-                                                            </div>
-                    
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#kernel">
-                                                    Kernel
-                                                </button>
-                                                <div class="modal fade" id="kernel" tabindex="-1" aria-labelledby="kernelLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="kernelLabel">Kernel</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
-                                
-                                                            <div >
-                                                                <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Estrategia de ejecución multihilos para mantener una conexión activa con cada una de las instanciaciones de los otros módulos</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Administrar los procesos lanzados por medio de las consolas utilizando la estructura PCB, donde se almacenará información administrativa y el contexto de ejecución del proceso. Se envia a CPU al ejecutar el proceso.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear planificador de largo plazo: Planificar los procesos en los estados New y Exit, donde se comunica con Memoria para inicializar o liberar los recursos asignados a estos.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear planificador de corto plazo: Planificar los procesos en los estados Ready, Block y Exec, empleando el algoritmo HRRN o FIFO. Mantener una comunicación activa con CPU.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Gestionar los recursos determinados en archivo de configuración y utilizados en las ejecuciones de los procesos.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Administrar el espacio brindado en Memoria. Solicitar creación o eliminación de segmentos a Memoria.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> En caso de compactación en Memoria, verificar que no haya operaciones en File System o Memoria para iniciar la actualización de PCB al recibir tabla de segmentos actualizada por Memoria.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Orquestar las llamadas a File System, implementando una tabla global de archivos abiertos y bloqueos exclusivos y obligatorios para la gestión de los mismos.</p></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#cpu">
-                                                    CPU
-                                                </button>
-                                                <div class="modal fade" id="cpu" tabindex="-1" aria-labelledby="cpuLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="cpuLabel">CPU</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
-                                
-                                                            <div>
-                                                                <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Interpretar y ejecutar las instrucciones de los Contextos de Ejecución recibidos desde Kernel, simulando un ciclo de instrucción simplificado.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Traducir direcciones lógicas del proceso a direcciones físicas de Memoria. Implementación MMU.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Actualizar Contextos de Ejecución y enviarlos hacia Kernel, incluyendo registros de propósito general.</p></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#memoria">
-                                                    Memoria
-                                                </button>
-                                                <div class="modal fade" id="memoria" tabindex="-1" aria-labelledby="memoriaLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="memoriaLabel">Memoria</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
-                                
-                                                            <div>
-                                                                <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Responder los pedidos realizados por la CPU para leer y/o escribir en los segmentos de datos del proceso en ejecución.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear y gestionar las estructuras administrativas necesarias al establecer conexión con Kernel, CPU y File System: Espacio contiguo de memoria asignado al usuario para que los procesos lean y escriban, y estructuras auxiliares para la implementación de segmentación (tablas de segmentos y lista de huecos libres).</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejar esquema de segmentación, utilizando los algoritmos first fit, best fit y worst fit para la ubicación de los segmentos en los espacios libres.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Simular velocidad de accesos a Memoria dando un tiempo de espera ante solicitudes de acceso al espacio de usuario de CPU o Kernel.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Implementar proceso de compactación al contar con espacio necesario para la creación de un segmento solicitado, requiriendo de juntar huecos libres para asignar un espacio contiguo e informar la actualización de la tabla de segmentos a Kernel.</p></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="part__item">
-                                                <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#File_System">
-                                                    File System
-                                                </button>
-                                                
-                                                <div class="modal fade" id="File_System" tabindex="-1" aria-labelledby="File_SystemLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title" id="File_SystemLabel">File System</h1>
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body content">
     
-                                                            <div>
-                                                                <ul class="content__list">
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Persistir información por medio de archivos configurados dentro del archivo de configuración.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar bitmap de bloques y recorrer directorio de FCBs para crear estructuras administrativas que permita administrar los archivos al haber establecido comunicación con Memoria como cliente.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Atender las solicitudes del Kernel, como servidor, mediante las operaciones abrir, crear, truncar, leer y escribir un archivo.</p></li>
-                                                                    <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Mantener actualizadas en disco todas las operaciones realizadas sobre los FCBs, Bitmap y Bloques.</p></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
+    
+    
+                                <!-- <iframe class="iframe" src="https://funkoshopnodejs-production.up.railway.app/home" frameborder="0"></iframe> -->
                             </div>
+                        </li>
+                        <li class="glide__slide" id="proyecto-realtime" data-project-index="2">
+                            <div class="perfil__subtitle section__subtitle-flex">
+                                <h3 class="subtitle__text">
+                                    RealTime
+                                </h3>
+                                <h3 class="subtitle__text">
+                                    Diseño de sistemas - 2023
+                                </h3>
+                            </div>
+                            
+                            <div class="content myBorder">
+                                <div class="proyect">
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Motivación</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    Desarrollo de aplicación web que permite monitorear el estado de la prestación de servicios que resultan necesarios a las diferentes comunidades con movilidad reducida, y son proporcionados en diferentes establecimientos de determinadas entidades.
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Stack tecnológico</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Lenguaje de programación principal:</span> Java
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Framework:</span> Javalin
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Template engine:</span> Handlebars
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Gestor de dependencias:</span> Maven
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">ORM:</span> Hibernate
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Motor de base de datos:</span> PostgreSQL
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Links</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon">
+                                                        Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <!-- <li class="content__text">
+                                                    <a href="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" target="_blank" class="content__link tab-icon">
+                                                        Página web <iconify-icon icon="gg:website" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="part__items">
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Funcionalidades</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de comunidades de cada usuario como administrador.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Apertura de incidentes en todas las comunidades, con una administración aislada de los mismos por cada comunidad.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Notificación de aperturas y revisión de incidentes hacia los compañeros de la comunidad del autor del incidente notificado.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Manejo de login y registro, y validación de credenciales.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de roles mediante middlewares.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Gestión de usuarios para el rol de adminastrador.</p>
+                                                </li>
+                                                <li class="part__item">
+                                                    <span class="content__text  tab-icon">
+                                                        <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text link_extra">Consumos de API Rest <a href="https://github.com/tomasneznajko/RealTime" target="_blank" class="content__link tab-icon"  data-bs-toggle="modal" data-bs-target="#api_rest">(más detalles aquí) </a>.</p>
+                                                    </span>
 
+    
+        
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text">Actualización de intereses (incidentes a los que fue involucrado) de cada usuario.</p> 
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Administración de entidades prestadoras y organismos de control mediante cargas de archivos.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Generación de rankings de los establecimientos y entidades respecto a los incidentes producidos.</p>
+                                                </li>
+                                            </ul>
+        
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+    
+                                <!-- <iframe class="iframe" src="https://monitoreo-de-servicios-de-transporte-y.onrender.com/comunidades" frameborder="0"></iframe> -->
+                            </div>
+                        </li>
+                        <li class="glide__slide" id="proyecto-tuki" data-project-index="3">
+                            <div class="perfil__subtitle section__subtitle-flex">
+                                <h3 class="subtitle__text" >
+                                    T.U.K.I (The Ultimate Kernel Implementation)
+                                </h3>
+                                <h3 class="subtitle__text">Sistemas operativos - 2023</h3>
+                            </div>
+                            
+                            <div class="content myBorder">
+                                <div class="proyect">
+                                    <div class="part__items">
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Motivación</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    Simulación de un sistema sistema distribuido, donde se planifican procesos, se resuelven peticiones al sistema y se administran de manera adecuada una Memoria y un sistema de archivos bajo determinados esquemas.
+                                                </li>
+                                            </ul>
+                                        </div>
+        
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Stack tecnológico</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Lenguaje de programación principal:</span> C
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Framework:</span> Valgrind (Memcheck + Helgrind)
+                                                </li>
+                                                <li class="content__text">
+                                                    <span class="content__text-bold">Automatizador de compilación:</span> Makefiles
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Links</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text">
+                                                    <a href="https://github.com/tomasneznajko/TP_SO_Grupo_Asado" target="_blank" class="content__link tab-icon">
+                                                        Repositorio <iconify-icon icon="bi:github" width="20" height="20"></iconify-icon>
+                                                    </a>
+                                                    
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="part__items">
+                                        <div class="part__item">
+                                            <h5 class="part__subtitle">Funcionalidades generales</h5>
+                                            <ul class="content__list">
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Levantar archivos de configuración con la información necesaria para ejecutar las funcionalidades particulares de cada módulo.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Usar <a href="https://github.com/sisoputnfrba/so-commons-library" target="_blank" class="content__link">Commons Library</a> para el manejo de estructuras de datos, archivos de configuración y logs.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Definir protocolo de comunicación que permita el envío de paquetes, que deben serializarse al recibirse, utilizando arquitectura cliente-servidor entre diferentes procesos de la misma red.</p>
+                                                </li>
+                                                <li class="content__text tab-icon">
+                                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text">Envío de diferentes tipos de logs que informen el estado actual del procesamiento en un módulo particular.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="part__item ">
+                                            <h5 class="part__subtitle">Módulos</h5>
+                                            <ul class="part__content part__item-content">
+                                                <li class="part__item">
+                                                    <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#consola">
+                                                        Consola
+                                                    </button>
+                                                    <div class="modal fade" id="consola" tabindex="-1" aria-labelledby="consolaLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title" id="consolaLabel">Consola</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body content">
+                                    
+                                                                <div >
+                                                                    <ul class="content__list">
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar e interpretar archivo con pseudocódigo para generar el listado de instrucciones de un proceso.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Conectarse con Kernel, enviarle el listado de instrucciones y esperar la finalización de su procesamiento.</p></li>
+                                                                    </ul>
+                                                                </div>
+                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="part__item">
+                                                    <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#kernel">
+                                                        Kernel
+                                                    </button>
+                                                    <div class="modal fade" id="kernel" tabindex="-1" aria-labelledby="kernelLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title" id="kernelLabel">Kernel</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body content">
+                                    
+                                                                <div >
+                                                                    <ul class="content__list">
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Estrategia de ejecución multihilos para mantener una conexión activa con cada una de las instanciaciones de los otros módulos</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Administrar los procesos lanzados por medio de las consolas utilizando la estructura PCB, donde se almacenará información administrativa y el contexto de ejecución del proceso. Se envia a CPU al ejecutar el proceso.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear planificador de largo plazo: Planificar los procesos en los estados New y Exit, donde se comunica con Memoria para inicializar o liberar los recursos asignados a estos.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear planificador de corto plazo: Planificar los procesos en los estados Ready, Block y Exec, empleando el algoritmo HRRN o FIFO. Mantener una comunicación activa con CPU.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Gestionar los recursos determinados en archivo de configuración y utilizados en las ejecuciones de los procesos.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Administrar el espacio brindado en Memoria. Solicitar creación o eliminación de segmentos a Memoria.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> En caso de compactación en Memoria, verificar que no haya operaciones en File System o Memoria para iniciar la actualización de PCB al recibir tabla de segmentos actualizada por Memoria.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Orquestar las llamadas a File System, implementando una tabla global de archivos abiertos y bloqueos exclusivos y obligatorios para la gestión de los mismos.</p></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="part__item">
+                                                    <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#cpu">
+                                                        CPU
+                                                    </button>
+                                                    <div class="modal fade" id="cpu" tabindex="-1" aria-labelledby="cpuLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title" id="cpuLabel">CPU</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body content">
+                                    
+                                                                <div>
+                                                                    <ul class="content__list">
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Interpretar y ejecutar las instrucciones de los Contextos de Ejecución recibidos desde Kernel, simulando un ciclo de instrucción simplificado.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Traducir direcciones lógicas del proceso a direcciones físicas de Memoria. Implementación MMU.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Actualizar Contextos de Ejecución y enviarlos hacia Kernel, incluyendo registros de propósito general.</p></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="part__item">
+                                                    <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#memoria">
+                                                        Memoria
+                                                    </button>
+                                                    <div class="modal fade" id="memoria" tabindex="-1" aria-labelledby="memoriaLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title" id="memoriaLabel">Memoria</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body content">
+                                    
+                                                                <div>
+                                                                    <ul class="content__list">
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Responder los pedidos realizados por la CPU para leer y/o escribir en los segmentos de datos del proceso en ejecución.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Crear y gestionar las estructuras administrativas necesarias al establecer conexión con Kernel, CPU y File System: Espacio contiguo de memoria asignado al usuario para que los procesos lean y escriban, y estructuras auxiliares para la implementación de segmentación (tablas de segmentos y lista de huecos libres).</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Manejar esquema de segmentación, utilizando los algoritmos first fit, best fit y worst fit para la ubicación de los segmentos en los espacios libres.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Simular velocidad de accesos a Memoria dando un tiempo de espera ante solicitudes de acceso al espacio de usuario de CPU o Kernel.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Implementar proceso de compactación al contar con espacio necesario para la creación de un segmento solicitado, requiriendo de juntar huecos libres para asignar un espacio contiguo e informar la actualización de la tabla de segmentos a Kernel.</p></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="part__item">
+                                                    <button type="button" class="button part__btn" data-bs-toggle="modal" data-bs-target="#File_System">
+                                                        File System
+                                                    </button>
+                                                    
+                                                    <div class="modal fade" id="File_System" tabindex="-1" aria-labelledby="File_SystemLabel" aria-hidden="true">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title" id="File_SystemLabel">File System</h1>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body content">
+        
+                                                                <div>
+                                                                    <ul class="content__list">
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Persistir información por medio de archivos configurados dentro del archivo de configuración.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Levantar bitmap de bloques y recorrer directorio de FCBs para crear estructuras administrativas que permita administrar los archivos al haber establecido comunicación con Memoria como cliente.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Atender las solicitudes del Kernel, como servidor, mediante las operaciones abrir, crear, truncar, leer y escribir un archivo.</p></li>
+                                                                        <li class="content__text tab-icon"><iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon> <p class="content__text"> Mantener actualizadas en disco todas las operaciones realizadas sobre los FCBs, Bitmap y Bloques.</p></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="tabler:chevron-left" class="arrow"></iconify-icon></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="tabler:chevron-right" class="arrow"></iconify-icon></button>
+                </div>
 
+                <!-- Modal API REST -->
+                <div class="modal fade" id="api_rest" tabindex="-1" aria-labelledby="inglesLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="inglesLabel">API Rest utilizadas</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </li>
-                </ul>
+                        <div class="modal-body content">
 
+                            <ul class="content__list">
+                                <li class="content__text tab-icon">
+                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Georef: </span>Obtención de las provincias, municipios y departamentos para gestionarlos con cada usuario.</p>
+                                </li>
+                                <li class="content__text tab-icon">
+                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Calculador de puntaje: </span>Actualizar semanalmente el puntaje de cada comunidad y miembro de la misma, condicionándolos por el mismo. <a href="https://github.com/tomasneznajko/CalculadorDePuntaje" target="_blank" class="content__link"> Repositorio aquí.</a></p>
+                                </li>
+                                <li class="content__text tab-icon">
+                                    <iconify-icon icon="solar:star-bold" style="color: #ffc107;"></iconify-icon><p class="content__text"><span class="content__text-bold">Fusión de comunidades: </span>Fusionar comunidades, que son posibles de acuerdo a un análisis previo de la propia API Rest consumida. <a href="https://github.com/tomasneznajko/DDS_ApiRest_Grupo4" target="_blank" class="content__link"> Repositorio aquí.</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -1251,8 +1289,9 @@
             </p>
         
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-        <script src="../js/links.js"></script>
-        <!-- <script src="../js/flechitas.js"></script> -->
+<!-- 
+        <script src="../js/links.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+        <script src="../js/glide.js"></script>
     </body>
 </html>

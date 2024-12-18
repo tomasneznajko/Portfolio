@@ -1,3 +1,8 @@
+/* EXTERNAL - GLIDE */
+
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
 .proyect{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,3 +26,44 @@
     gap: var(--spacing-4);
 }
 
+/* GLIDE */
+
+.arrow {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+/* GLIDE - OVERRIDE */
+
+.glide__slide{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    padding: var(--spacing-16);
+}
+
+.glide__arrows{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
+}
+
+.glide__arrow{
+    transition: background-color .3s ease-in-out;
+    transition: border .3s ease-in-out;
+}
+
+.glide__arrow:hover{
+    background-color:  var(--primary-900);
+    color: white;
+    border: 2px solid var(--dark-solid);
+}
