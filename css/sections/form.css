@@ -30,10 +30,11 @@
 
 .form__box--flex{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* align-items: center; */
-    gap: var(--spacing-68);
-    width: 100%;
+    padding: var(--spacing-8);
+    gap: var(--spacing-36);
+    /* width: 100%; */
 }
 
 .form__label{
@@ -41,7 +42,7 @@
     font-weight: 300;
     font-size: var(--font-medium);
     color: black;
-    /* width: 10rem; */
+    width: 80px;
 }
 
 /* SELECT */
@@ -71,7 +72,7 @@
 
 .form__input{
     padding: 0 var(--spacing-8);
-    width: 30.5rem;
+    width: 27rem;
     border: none;
     border-bottom: .05rem solid var(--primary-solid);
 }
@@ -91,6 +92,8 @@
 
 .form__textarea{
     padding: var(--spacing-8);
+    width: 30rem;
+    height: var(--spacing-128);
 }
 
 

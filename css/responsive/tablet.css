@@ -2,4 +2,16 @@
     .navbar-me, .navbar__menu-me {
         flex-direction: column;
     }
+    .grid__tablet{
+        grid-template-columns: 1fr;
+    }
+    .content__parts{
+        flex-direction: column;
+    }
+    .proyect{
+        grid-template-columns: 1fr;
+    }
+    .section__subtitle-flex{
+        flex-direction: column;
+    }
 }

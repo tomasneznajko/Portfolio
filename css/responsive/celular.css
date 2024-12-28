@@ -3,5 +3,34 @@
 @media only screen and (max-width: 480px) {
     .navbar-me, .navbar__menu-me {
         flex-direction: column;
+        gap: var(--spacing-8);
+    }
+    .form__box--flex{
+        gap: var(--spacing-8);
+    }
+    .form__textarea{
+        width: 20rem;
+    }
+    .form__input{
+        width: 20rem;
+    }
+
+    .hero{
+        background-position: center center;
+    }
+    .content__part {
+        align-items: center;
+    }
+    .content__parts{
+        flex-direction: column;
+    }
+    .proyect{
+        grid-template-columns: 1fr;
+    }
+    .section__subtitle-flex{
+        flex-direction: column;
+    }
+    .part__content{
+        padding-left: 0;
     }
 }

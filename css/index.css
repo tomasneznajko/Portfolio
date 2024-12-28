@@ -44,7 +44,6 @@
     font-family: var(--alternative-font);
     font-weight: 700;
     color: var(--primary-solid);
-    text-align: center;
 }
 
 .part__content{
@@ -54,7 +53,7 @@
     align-items: center;
     width: 100%;
     gap: var(--spacing-8);
-    padding: var(--spacing-12);
+
 }
 
 
